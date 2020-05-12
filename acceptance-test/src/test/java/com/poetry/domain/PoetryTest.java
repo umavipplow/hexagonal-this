@@ -15,9 +15,9 @@ public class PoetryTest {
     @Test
     @DisplayName("Should get verse when asked for poetry")
     public void testTheLeftSidePort() {
-        //Irequestverse :left side  port
-        //poetryReader : hegagone
-        IRequestVerse poetryReader = new PoetryReader();
+        //RequestVerse :left side  port
+        //poetryReader : hexagonal
+        RequestVerse poetryReader = new PoetryReader();
         String verse = poetryReader.giveMeSomePoetry();
         Assertions.assertEquals("Early to Bed Early to  raise make a men  healthy  wealthy and wise", verse);
     }

@@ -1,5 +1,5 @@
 package com.poetry.domain;
 
-public interface IRequestVerse {
+public interface RequestVerse {
     String giveMeSomePoetry();
 }
