@@ -1,8 +1,20 @@
 package com.poetry.domain;
 
 public class PoetryReader implements RequestVerse {
+
+    private ObtainPoem obtainPoem;
+
+    public PoetryReader(ObtainPoem obtainPoem) {
+        this.obtainPoem = obtainPoem;
+    }
+
+    public PoetryReader() {
+        this(new ObtainPoem() {
+        });
+    }
+
     @Override
     public String giveMeSomePoetry() {
-        return "Early to Bed Early to  raise make a men  healthy  wealthy and wise";
+        return obtainPoem.giveMePoetry();
     }
 }
