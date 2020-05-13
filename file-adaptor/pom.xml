@@ -2,14 +2,13 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.poetry</groupId>
         <artifactId>poetry-parent</artifactId>
+        <groupId>com.poetry</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-    <artifactId>acceptance-test</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>file-adaptor</artifactId>
     <dependencies>
         <dependency>
             <groupId>com.poetry</groupId>
@@ -17,14 +16,9 @@
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
-            <groupId>com.poetry</groupId>
-            <artifactId>console-adaptor</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
-        </dependency>
-        <dependency>
-            <groupId>com.poetry</groupId>
-            <artifactId>file-adaptor</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
         </dependency>
     </dependencies>
 </project>
