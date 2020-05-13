@@ -10,9 +10,6 @@ import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
-import java.io.ByteArrayOutputStream;
-
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -46,7 +43,5 @@ public class PoetryTest {
         ConsoleAdaptor consoleAdaptor = new ConsoleAdaptor(poetryReader, writeLines);
         consoleAdaptor.ask();
         Mockito.verify(writeLines).writeLine("Baa Baa Black sheep-uma");
-
-
     }
 }

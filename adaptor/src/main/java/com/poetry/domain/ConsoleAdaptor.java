@@ -1,7 +1,5 @@
 package com.poetry.domain;
 
-import java.io.ByteArrayOutputStream;
-
 public class ConsoleAdaptor {
 
     private RequestVerse poetryReader;
