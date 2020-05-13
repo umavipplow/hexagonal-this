@@ -18,7 +18,7 @@
         </dependency>
         <dependency>
             <groupId>com.poetry</groupId>
-            <artifactId>consoleadaptor</artifactId>
+            <artifactId>console-adaptor</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
