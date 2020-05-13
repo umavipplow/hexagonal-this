@@ -1,5 +1,7 @@
 package com.poetry.domain;
 
+import com.poetry.console.ConsoleAdaptor;
+import com.poetry.console.WriteLines;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -7,6 +9,7 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.platform.runner.JUnitPlatform;
 import org.junit.runner.RunWith;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.mockito.Mockito.when;
@@ -33,5 +36,14 @@ public class PoetryTest {
         RequestVerse poetryReader = new PoetryReader(obtainPoem);
         String verse = poetryReader.giveMeSomePoetry();
         Assertions.assertEquals("Baa Baa Black sheep", verse);
+    }
+
+    @Test
+    public void testConsoleAdaptor(@Mock ObtainPoem obtainPoem, @Mock WriteLines writeLines) {
+        RequestVerse poetryReader = new PoetryReader(obtainPoem);
+        when(poetryReader.giveMeSomePoetry()).thenReturn("Baa Baa Black sheep");
+        ConsoleAdaptor consoleAdaptor = new ConsoleAdaptor(poetryReader, writeLines);
+        consoleAdaptor.ask();
+        Mockito.verify(writeLines).writeLine("Baa Baa Black sheep-uma");
     }
 }

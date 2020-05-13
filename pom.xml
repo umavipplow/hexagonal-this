@@ -11,6 +11,7 @@
     <modules>
         <module>acceptance-test</module>
         <module>domain</module>
+        <module>adaptor</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
