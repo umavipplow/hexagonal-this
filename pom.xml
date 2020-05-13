@@ -11,7 +11,7 @@
     <modules>
         <module>acceptance-test</module>
         <module>domain</module>
-        <module>adaptor</module>
+        <module>console-adaptor</module>
         <module>console</module>
     </modules>
     <properties>
