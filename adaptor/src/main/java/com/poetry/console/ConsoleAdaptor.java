@@ -1,4 +1,6 @@
-package com.poetry.domain;
+package com.poetry.console;
+
+import com.poetry.domain.RequestVerse;
 
 public class ConsoleAdaptor {
 

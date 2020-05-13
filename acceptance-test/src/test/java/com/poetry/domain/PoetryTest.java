@@ -1,5 +1,7 @@
 package com.poetry.domain;
 
+import com.poetry.console.ConsoleAdaptor;
+import com.poetry.console.WriteLines;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;

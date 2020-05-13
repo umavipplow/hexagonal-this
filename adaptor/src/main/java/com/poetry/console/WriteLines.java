@@ -1,4 +1,4 @@
-package com.poetry.domain;
+package com.poetry.console;
 
 public interface WriteLines {
 
