@@ -60,4 +60,13 @@ public class PoetryTest {
         String verse = poetryReader.giveMeSomePoetry();
         assertEquals("Baa Baa Black sheep", verse);
     }
+
+    @Test
+    @DisplayName("Should get empty string when asked for poetry from invalid  file ")
+    public void testFileAdaptorWithoutFile() throws IOException {
+        ObtainPoem obtainPoem = new PoetryLibFileAdaptor("");
+        RequestVerse poetryReader = new PoetryReader(obtainPoem);
+        String verse = poetryReader.giveMeSomePoetry();
+        assertEquals("", verse);
+    }
 }
