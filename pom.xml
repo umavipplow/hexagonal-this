@@ -10,6 +10,7 @@
     <description>The parent project for poetry</description>
     <modules>
         <module>acceptance-test</module>
+        <module>domain</module>
     </modules>
     <properties>
         <java.version>1.8</java.version>
@@ -62,7 +63,12 @@
     </dependencies>
     <dependencyManagement>
         <dependencies>
-            <!--  -->
+            <dependency>
+                <groupId>com.poetry</groupId>
+                <artifactId>poetry-parent</artifactId>
+                <version>${parent.version}</version>
+                <scope>test</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>

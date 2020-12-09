@@ -11,5 +11,11 @@
     <artifactId>acceptance-test</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <dependencies>
+        <dependency>
+            <groupId>com.poetry</groupId>
+            <artifactId>doamin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 </project>
