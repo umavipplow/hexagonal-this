@@ -1,16 +1,16 @@
 # Hexagonal This
 
-I was greatly influenced when I saw the video in YouTube about Alistair's hexagonal architecture. Big shout out to **Alistair Cockburn** for beautifully explaining the port and adapter's pattern (a.k.a hexagonal architecture). I loved it just because of its separation of concerns which enables high scalability and helping me introduce the plug and play concept. I wanted to try out the same KATA as **Thomas PIERRAIN** (again impressed with TDD and being bullet proof) while watching the video but with Java. 
+I was greatly influenced when I saw the video in YouTube about Alistair's hexagonal architecture. Big shout out to **Alistair Cockburn** for beautifully explaining the com.poetry.console.port and adapter's pattern (a.k.a hexagonal architecture). I loved it just because of its separation of concerns which enables high scalability and helping me introduce the plug and play concept. I wanted to try out the same KATA as **Thomas PIERRAIN** (again impressed with TDD and being bullet proof) while watching the video but with Java. 
 
 
 ## KATA - 1
 
-- Write the left side port for test for requesting poetry i.e. **`RequestVerse`**.
+- Write the left side com.poetry.console.port for test for requesting poetry i.e. **`RequestVerse`**.
 - Write the domain i.e. **`PoetryReader`** which can be hardcoded. This very first version of the business logic returns an hard-coded result.
 
 ## KATA - 2
 
-- Write the right side port **`ObtainPoem`** with adapters i.e. test which fetches the poem using stubs.
+- Write the right side com.poetry.console.port **`ObtainPoem`** with adapters i.e. test which fetches the poem using stubs.
 
 ## KATA - 3
 
