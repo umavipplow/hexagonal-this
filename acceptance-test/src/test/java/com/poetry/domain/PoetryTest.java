@@ -12,7 +12,6 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.when;
 
 @ExtendWith(MockitoExtension.class)
@@ -24,7 +23,7 @@ public class PoetryTest {
     public void testTheLeftSidePort() {
         RequestVerse requestVerse = new PoetryReader();
         String verse = requestVerse.getPoetry();
-        assertThat(verse).isEqualTo("Jack and Jill");
+        assertThat(verse).isEqualTo("Jack and Jill" + "\n");
     }
 
     @Test
@@ -33,6 +32,6 @@ public class PoetryTest {
         when(obtainPoem.getPoem()).thenReturn("Jonny jonny yes pappa");
         RequestVerse requestVerse = new PoetryReader(obtainPoem);
         String verse = requestVerse.getPoetry();
-        assertThat(verse).isEqualTo("Jonny jonny yes pappa");
+        assertThat(verse).isEqualTo("Jonny jonny yes pappa" + "\n");
     }
 }
