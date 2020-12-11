@@ -12,7 +12,6 @@
         <module>acceptance-test</module>
         <module>domain</module>
         <module>console-adapter</module>
-        <module>console</module>
         <module>file-adapter</module>
     </modules>
     <properties>
