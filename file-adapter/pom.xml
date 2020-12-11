@@ -10,6 +10,19 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>file-adapter</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>com.poetry</groupId>
+            <artifactId>doamin</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>1.4</version>
+        </dependency>
+    </dependencies>
 
     <properties>
         <maven.compiler.source>15</maven.compiler.source>
